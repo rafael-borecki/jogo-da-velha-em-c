@@ -46,11 +46,11 @@ char getch(void)
 
 //INICIO DAS FUNCOES GRAFICAS
 void blankPrint(){// IMPRIME 1 CARACTERE DO TIPO VAZIO
-	printf("\u2591");
+	printf("\ ");
 }
 
 void barPrint(){ // IMPRIME 1 CARACTERE DO TIPO BARRA
-	printf("\u2588");
+	printf("@");
 }
 
 void bar2Print(){ // IMPRIME 1 CARACTERE DO TIPO BARRA_2
