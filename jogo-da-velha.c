@@ -46,7 +46,7 @@ char getch(void)
 
 //INICIO DAS FUNCOES GRAFICAS
 void blankPrint(){// IMPRIME 1 CARACTERE DO TIPO VAZIO
-	printf("\ ");
+	printf(" ");
 }
 
 void barPrint(){ // IMPRIME 1 CARACTERE DO TIPO BARRA
