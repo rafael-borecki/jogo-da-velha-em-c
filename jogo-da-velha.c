@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#ifdef _WIN32
-#include <conio.h>
-#else
 #include <termios.h>
-/*ADAPTACAO DA FUNCAO CLEAR() PARA LINUX*/
+/* METODO DE LIMPEZA DE TELA*/
 #define clear() printf("\033[H\033[J")
 //TERMIOS
 /*DUAS STRUCTS QUE DEFINEM AS CONFIGURACOES DO TERMINAL*/
@@ -46,15 +43,14 @@ char getch(void)
 	return getch_(0);
 }
 //ENDTERMIOS
-#endif
 
 //INICIO DAS FUNCOES GRAFICAS
 void blankPrint(){// IMPRIME 1 CARACTERE DO TIPO VAZIO
-	printf(" ");
+	printf("\u2591");
 }
 
 void barPrint(){ // IMPRIME 1 CARACTERE DO TIPO BARRA
-	printf("@");
+	printf("\u2588");
 }
 
 void bar2Print(){ // IMPRIME 1 CARACTERE DO TIPO BARRA_2
